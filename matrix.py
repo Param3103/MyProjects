@@ -6,7 +6,10 @@ num2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 def matrix(numbers):
     size = len(numbers)
     length = size ** 0.5 # matrix has dimensions length-by-length
+    length2 = length
     length = int(length)
+    if length2 != length:
+        return('Error!')
     matrix = []
     for i in range(length):
         matrix.append([])
