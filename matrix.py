@@ -6,21 +6,20 @@ num2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 def matrix(numbers):
     size = len(numbers)
     length = size ** 0.5 # matrix has dimensions length-by-length
-    length2 = length
+    lengthtemp = length
     length = int(length)
-    if length2 != length:
+    if length != lengthtemp: 
         return('Error!')
     matrix = []
     for i in range(length):
         matrix.append([])
-    for i in range(length):
-        for j in range(length):
-            matrix[i].append(0)
     x = 0
     for i in range(length):
         for j in range(length):
-            matrix[i][j] = numbers[x]
+            matrix[i].append(numbers[x])
             x += 1
     return(matrix)
 
 print(matrix(num2))
+
+
