@@ -49,8 +49,12 @@ class SortingAlgorithm:
                     sets.append(i)
             return(sets)
 
+class Sort(SortingAlgorithm):
+    pass
+    
+            
 sets = [1, 3, 2, 6, 4, 8, -5, 3.5, 13, 8]
-sets = SortingAlgorithm.QuickSort(sets, True)
+sets = Sort.QuickSort(sets, True)
 print(sets)
 
 #below is online example, above is my own
