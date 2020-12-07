@@ -80,3 +80,11 @@ p1.robot_own = r2
 p2.robot_own = r1
 
 # print(p1.robot_own.introduce_self())
+
+"""Try except finally code"""
+try:
+    print(param)
+except NameError:
+    print("This var is undefined.")
+finally:
+    print("This code has been executed.")
